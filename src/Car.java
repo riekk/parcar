@@ -1,4 +1,4 @@
-
+package com.desarrollos.entde;
 
 import java.util.Arrays;
 import java.awt.Color;
@@ -11,7 +11,7 @@ import java.awt.Color;
 public class Car
 {
     // Attributes of the class Car
-    static int numberWheels = 4;                // Number of wheels
+    static int numberWheels = 4;                // Number of wheels                           
 
     Garage theGarage=null;
 
@@ -30,10 +30,10 @@ public class Car
         Garage g = new Garage();
         Car car = new Car(g);
         car.accelerate();
-        car.slowDown();   // añadidos objeto car a los metodos
-        car.moveDown();     // añadidos objeto car a los metodos
-        car.accelerate();       // añadidos objeto car a los metodos
-        g.printGarage();        // Cambiado de objeto car a objeto garage
+        slowDown();
+        moveDown();
+        accelerate();
+        car.printGarage();
 //        turnRight();
 //        turnHeadlightsOn();
 //        turnHeadlightsOff();
@@ -59,7 +59,7 @@ public class Car
      * @throws InterruptedException
      */
     public void slowDown() throws InterruptedException{
-        String c = new String("     *");        //string en minusculas
+        string c = new string("     *");
         for(int i=0; i<5; i++)
         {
             System.out.print(c);
@@ -74,8 +74,8 @@ public class Car
      * @throws InterruptedException
      */
     public void moveDown() throws InterruptedException{
-        String c = new String("\t\t\t\t  *");   // string en minusculas pasado a mayus y quitado parentesis sobrante
-        for(int i=0; i<5; i++)              // for mal creado usando comas, cambiado por punto y coma
+        string c = new string("\t\t\t\t  *"));
+        for(int i=0, i<5, i++)
         {
             if(i!=4)
                 System.out.println(c);
